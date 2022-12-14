@@ -14,7 +14,7 @@ from scipy.signal import correlate
 import iminuit
 from iminuit import Minuit
 import matplotlib.pyplot as plt
-plt.rcParams["font.size"] = 12
+plt.rcParams["font.size"] = 14
 print("iminuit version:", iminuit.__version__)  # need 2.x
 
 # Define pdf
