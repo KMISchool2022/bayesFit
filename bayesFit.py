@@ -82,6 +82,7 @@ m = Minuit(negLogPost, parin, name=parname)
 m.errors = parstep
 m.fixed = parfix
 m.limits = parlim
+m.errordef = 0.5                          # errors from lnL = lnLmax - 0.5
 m.migrad()                                # minimize -logPost
 MAP = m.values                            # posterior mode
 sigmaMAP = m.errors                       # standard deviations
